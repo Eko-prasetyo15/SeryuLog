@@ -11,3 +11,202 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.owl-carousel {
+  position: relative; /* Membuat posisi relatif untuk menempatkan nav secara absolut */
+}
+
+.owl-nav {
+  position: absolute;
+  bottom: -40px; /* Sesuaikan sesuai kebutuhan, untuk menempatkan nav tepat di bawah carousel */
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%; /* Atur lebar sesuai kebutuhan */
+}
+
+.owl-nav button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #000; /* Warna panah navigasi */
+  transition: color 0.3s ease;
+}
+
+.owl-nav button:hover {
+  color: #666; /* Warna panah navigasi saat hover */
+}
+
+
+.movie-card {
+  width: 193.09px;
+height: 355.1px;
+top: 8px;
+left: 962px;
+gap: 10px;
+opacity: 0px;
+border-radius: 10px;
+overflow: hidden; /* Sembunyikan konten yang keluar dari batas card */
+}
+.movie-card:hover {
+  transform: translateY(-3px) scale(1.05) rotateX(15deg);
+}
+
+
+.movie-card-body {
+  padding: 10px; /* Atur padding agar konten tidak terlalu dekat dengan batas card */
+}
+
+.title {
+/* font-family: Poppins; */
+font-size: 48px;
+font-weight: 500;
+line-height: 72px;
+text-align: left;
+color: #FFFFFF;
+
+
+}
+.movie-card img {
+  width: 195px;
+height: 292px;
+top: 8px;
+left: 1415px;
+gap: 0px;
+opacity: 0px;
+display: inline-block;
+
+}
+.gallery-item {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.gallery-item img {
+  display: block;
+display: inline-block;
+
+  width: 195px;
+  height: 292px;
+  top: 8px;
+  left: 1415px;
+  gap: 0px;
+  opacity: 0px;
+  /* height: auto; */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+}
+.overlay img {
+  width: 17px; /* Ukuran gambar ikon */
+  height: 17px;
+  margin-left: 1px;
+  cursor: pointer;
+}
+.overlay i {
+  margin-left: 5px;
+  font-size: 20px;
+  color: #FF5733; /* Warna ikon sesuaikan dengan desain Anda */
+  cursor: pointer;
+}
+
+.movie-title {
+  font-family: Inter;
+  color: #FFFFFF;
+  border: none;
+  font-size: 16px;
+  margin-top: 0; /* Atur margin agar tidak terlalu dekat dengan atas card */
+  white-space: nowrap; /* Menghindari teks untuk wrap (baru berlanjut) */
+  overflow: hidden; /* Sembunyikan konten yang keluar dari batas card */
+  text-overflow: ellipsis; /* Tampilkan titik elipsis (...) jika teks terlalu panjang */
+}
+
+.movie-card p {
+  font-family: Inter;
+  border: none;
+  font-size: 14px;
+  margin-top: 0; /* Atur margin agar tidak terlalu dekat dengan atas card */
+  white-space: nowrap; /* Menghindari teks untuk wrap (baru berlanjut) */
+  overflow: hidden; /* Sembunyikan konten yang keluar dari batas card */
+  text-overflow: ellipsis; /* Tampilkan titik elipsis (...) jika teks terlalu panjang */
+}
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2);/* Optional: Add a semi-transparent white overlay */
+  backdrop-filter: blur(1px); /* Apply the blur effect */
+  pointer-events: none;
+  z-index: 1040; /* Make sure it appears below the modal */
+}
+
+.modal-dialog {
+  max-width: 250px;
+  margin: 1.75rem auto;
+}
+@media (max-width: 768px) {
+  .col-2 {
+    width: 50%; /* Untuk layar <=768px, elemen akan menempati 50% lebar */
+  }
+}
+
+.main-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.spinner-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Atur z-index agar spinner di atas konten lain */
+}
+
+.tmdb-spinner {
+  color: #007bff; /* Warna border spinner */
+}
+
+.tmdb-logo {
+  width: 100px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-title  {
+font-family: Poppins;
+font-size: 36px;
+font-weight: 900;
+line-height: 50px;
+letter-spacing: 0.5em;
+text-align: left;
+color:#FFFFFF;
+
+}
+
+
